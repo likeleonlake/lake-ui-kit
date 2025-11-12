@@ -1,0 +1,49 @@
+/* ============================================
+   TYPE SCALE - Typography utility classes
+   Generated from composite typography tokens
+   ============================================ */
+
+/* Body styles */
+.text-body-high {
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--dimension-200);
+  line-height: var(--dimension-275);
+}
+
+.text-body {
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--dimension-200);
+  line-height: var(--dimension-275);
+}
+
+.text-body-default-italic {
+  font-family: var(--font-family-italic);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--dimension-200);
+  line-height: var(--dimension-275);
+}
+
+/* Display styles */
+.text-display {
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--dimension-600);
+  line-height: var(--dimension-800);
+}
+
+.text-display-italic {
+  font-family: var(--font-family-italic);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--dimension-600);
+  line-height: var(--dimension-800);
+}
+
+.text-display-bit {
+  font-family: var(--font-family-bit);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--dimension-600);
+  line-height: var(--dimension-800);
+}
+

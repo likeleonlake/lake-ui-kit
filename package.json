@@ -1,0 +1,74 @@
+{
+  "name": "@lakenlago/ui-kit",
+  "version": "0.1.0",
+  "description": "A modern, lightweight UI component library",
+  "type": "module",
+  "main": "./dist/lake-ui-kit.cjs.js",
+  "module": "./dist/lake-ui-kit.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/lake-ui-kit.es.js",
+      "require": "./dist/lake-ui-kit.cjs.js"
+    },
+    "./dist/lake-ui-kit.css": "./dist/lake-ui-kit.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "sync-tokens": "node sync-tokens.js"
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "design-system",
+    "framer-motion"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "framer-motion": "^11.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^8.4.7",
+    "@storybook/addon-essentials": "^8.4.7",
+    "@storybook/addon-interactions": "^8.4.7",
+    "@storybook/addon-links": "^8.4.7",
+    "@storybook/react": "^8.4.7",
+    "@storybook/react-vite": "^8.4.7",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitest/coverage-v8": "^2.1.8",
+    "framer-motion": "^11.12.0",
+    "happy-dom": "^15.11.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "storybook": "^8.4.7",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lakenlago/lake-ui-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lakenlago/lake-ui-kit/issues"
+  },
+  "homepage": "https://github.com/lakenlago/lake-ui-kit#readme",
+  "dependencies": {
+    "@heroicons/react": "^2.2.0"
+  }
+}

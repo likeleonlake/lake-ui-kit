@@ -1,0 +1,29 @@
+/* ============================================
+   TYPOGRAPHY BASE
+   ============================================ */
+
+/* Import type scale */
+@import url('../tokens/type-scale.css');
+
+/* Additional typography utilities */
+.text-primary {
+  color: var(--color-foreground-primary);
+}
+
+.text-secondary {
+  color: var(--color-foreground-secondary);
+}
+
+.text-tertiary {
+  color: var(--color-foreground-tertiary);
+}
+
+/* Headline base */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-medium);
+}
+
+/* Text alignment */
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }

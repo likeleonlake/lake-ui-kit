@@ -1,0 +1,78 @@
+/* ============================================
+   CORE TOKENS - Primitivos
+   Generated from Tokens Studio
+   ============================================ */
+
+:root {
+  /* Colors - Base */
+  --color-mono-100: 52 52 51;
+  --color-mono-0: 251 251 251;
+
+  /* Colors - Projects */
+  --color-project-embat: 203 226 249;
+  --color-project-embat-subtle: 244 248 252;
+  --color-project-phoenix: 238 234 249;
+  --color-project-phoenix-subtle: 245 244 249;
+
+  /* Alpha - Opacity scale */
+  --alpha-0: 0.00;
+  --alpha-10: 0.02;
+  --alpha-20: 0.04;
+  --alpha-30: 0.08;
+  --alpha-40: 0.10;
+  --alpha-50: 0.50;
+  --alpha-60: 0.69;
+  --alpha-80: 0.80;
+  --alpha-90: 0.90;
+  --alpha-100: 1.00;
+
+  /* Dimension - Spacing scale */
+  --dimension-0: 0rem;
+  --dimension-005: 0.03125rem;
+  --dimension-025: 0.125rem;
+  --dimension-050: 0.25rem;
+  --dimension-075: 0.375rem;
+  --dimension-100: 0.5rem;
+  --dimension-150: 0.75rem;
+  --dimension-175: 0.875rem;
+  --dimension-200: 1rem;
+  --dimension-250: 1.25rem;
+  --dimension-275: 1.375rem;
+  --dimension-300: 1.5rem;
+  --dimension-400: 2rem;
+  --dimension-500: 2.5rem;
+  --dimension-600: 3rem;
+  --dimension-800: 4rem;
+  --dimension-1000: 5rem;
+  --dimension-2000: 10rem;
+
+  /* Typography - Font families */
+  --font-family-default: 'PP Neue Montreal', system-ui, sans-serif;
+  --font-family-italic: 'PP Writer', system-ui, sans-serif;
+  --font-family-bit: 'PP NeueBit', system-ui, sans-serif;
+
+  /* Typography - Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Typography - Font sizes */
+  --font-size-display-default: var(--dimension-600);
+  --font-size-display-italic: 50px;
+  --font-size-display-bit: 69px;
+  --font-size-headline: var(--dimension-200);
+  --font-size-body: var(--dimension-200);
+
+  /* Typography - Line heights */
+  --line-height-display: var(--dimension-800);
+  --line-height-headline: var(--dimension-275);
+  --line-height-body: var(--dimension-275);
+
+  /* Border - Width */
+  --border-width-primary: var(--dimension-005);
+
+  /* Border - Radius */
+  --border-radius-s: var(--dimension-100);
+  --border-radius-m: var(--dimension-300);
+  --border-radius-full: 9999px;
+}

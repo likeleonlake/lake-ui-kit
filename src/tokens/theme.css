@@ -1,0 +1,142 @@
+/* ============================================
+   THEME - Light & Dark with data attributes
+   Generated from Tokens Studio
+   ============================================ */
+
+@import url('./core.css');
+
+/* Light theme (default) */
+:root,
+[data-theme="light"] {
+  --color-foreground-primary: rgba(var(--color-mono-100) / var(--alpha-90));
+  --color-foreground-secondary: rgba(var(--color-mono-100) / var(--alpha-80));
+  --color-foreground-tertiary: rgba(var(--color-mono-100) / var(--alpha-60));
+  --color-foreground-inverse-primary: rgba(var(--color-mono-0) / var(--alpha-90));
+  --color-foreground-inverse-secondary: rgba(var(--color-mono-0) / var(--alpha-80));
+  --color-background-reset: rgba(var(--color-mono-0) / var(--alpha-100));
+  --color-background-inverse-reset: rgba(var(--color-mono-100) / var(--alpha-100));
+  --color-background-primary: rgba(var(--color-mono-100) / var(--alpha-10));
+  --color-background-secondary: rgba(var(--color-mono-100) / var(--alpha-20));
+  --color-semantic-foreground-selected: rgba(var(--color-mono-100) / var(--alpha-100));
+  --color-semantic-foreground-active: rgba(var(--color-mono-100) / var(--alpha-90));
+  --color-semantic-foreground-disable: rgba(var(--color-mono-100) / var(--alpha-50));
+  --color-semantic-foreground-inverse-selected: rgba(var(--color-mono-0) / var(--alpha-100));
+  --color-semantic-foreground-inverse-active: rgba(var(--color-mono-0) / var(--alpha-90));
+  --color-semantic-foreground-inverse-disable: rgba(var(--color-mono-0) / var(--alpha-50));
+  --color-semantic-background-selected: rgba(var(--color-mono-100) / var(--alpha-20));
+  --color-semantic-background-hover: rgba(var(--color-mono-100) / var(--alpha-30));
+  --color-semantic-background-inverse-selected: rgba(var(--color-mono-0) / var(--alpha-20));
+  --color-semantic-background-inverse-hover: rgba(var(--color-mono-0) / var(--alpha-30));
+  --color-button-foreground-active: rgba(var(--color-mono-0) / var(--alpha-100));
+  --color-button-foreground-hover: rgba(var(--color-mono-0) / var(--alpha-100));
+  --color-button-foreground-selected: rgba(var(--color-mono-0) / var(--alpha-100));
+  --color-button-foreground-inverse-active: rgba(var(--color-mono-100) / var(--alpha-100));
+  --color-button-foreground-inverse-hover: rgba(var(--color-mono-100) / var(--alpha-100));
+  --color-button-foreground-inverse-selected: rgba(var(--color-mono-100) / var(--alpha-100));
+  --color-button-background-active: rgba(var(--color-mono-100) / var(--alpha-100));
+  --color-button-background-hover: rgba(var(--color-mono-100) / var(--alpha-90));
+  --color-button-background-selected: rgba(var(--color-mono-100) / var(--alpha-80));
+  --color-button-background-inverse-active: rgba(var(--color-mono-0) / var(--alpha-100));
+  --color-button-background-inverse-hover: rgba(var(--color-mono-0) / var(--alpha-90));
+  --color-button-background-inverse-selected: rgba(var(--color-mono-0) / var(--alpha-80));
+  --color-stroke-default: rgba(var(--color-mono-100) / var(--alpha-20));
+  --color-stroke-gradient-background-init: rgba(var(--color-mono-100) / var(--alpha-10));
+  --color-stroke-gradient-background-center: rgba(var(--color-mono-100) / var(--alpha-0));
+  --color-stroke-gradient-background-end: rgba(var(--color-mono-100) / var(--alpha-10));
+  --color-stroke-divider-init: rgba(var(--color-mono-100) / var(--alpha-0));
+  --color-stroke-divider-center: rgba(var(--color-mono-100) / var(--alpha-20));
+  --color-stroke-divider-end: rgba(var(--color-mono-100) / var(--alpha-0));
+  --color-shadow-deep: rgba(var(--color-mono-100) / var(--alpha-20));
+  --color-shadow-rough: rgba(var(--color-mono-100) / var(--alpha-10));
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --color-foreground-primary: rgba(var(--color-mono-0) / var(--alpha-90));
+  --color-foreground-secondary: rgba(var(--color-mono-0) / var(--alpha-80));
+  --color-foreground-tertiary: rgba(var(--color-mono-0) / var(--alpha-60));
+  --color-foreground-inverse-primary: rgba(var(--color-mono-100) / var(--alpha-90));
+  --color-foreground-inverse-secondary: rgba(var(--color-mono-100) / var(--alpha-80));
+  --color-background-reset: rgba(var(--color-mono-100) / var(--alpha-100));
+  --color-background-inverse-reset: rgba(var(--color-mono-0) / var(--alpha-100));
+  --color-background-primary: rgba(var(--color-mono-0) / var(--alpha-10));
+  --color-background-secondary: rgba(var(--color-mono-0) / var(--alpha-20));
+  --color-semantic-foreground-selected: rgba(var(--color-mono-0) / var(--alpha-100));
+  --color-semantic-foreground-active: rgba(var(--color-mono-0) / var(--alpha-90));
+  --color-semantic-foreground-disable: rgba(var(--color-mono-0) / var(--alpha-50));
+  --color-semantic-foreground-inverse-selected: rgba(var(--color-mono-100) / var(--alpha-100));
+  --color-semantic-foreground-inverse-active: rgba(var(--color-mono-100) / var(--alpha-90));
+  --color-semantic-foreground-inverse-disable: rgba(var(--color-mono-100) / var(--alpha-50));
+  --color-semantic-background-selected: rgba(var(--color-mono-0) / var(--alpha-20));
+  --color-semantic-background-hover: rgba(var(--color-mono-0) / var(--alpha-30));
+  --color-semantic-background-inverse-selected: rgba(var(--color-mono-100) / var(--alpha-20));
+  --color-semantic-background-inverse-hover: rgba(var(--color-mono-100) / var(--alpha-30));
+  --color-button-foreground-active: rgba(var(--color-mono-100) / var(--alpha-100));
+  --color-button-foreground-hover: rgba(var(--color-mono-100) / var(--alpha-100));
+  --color-button-foreground-selected: rgba(var(--color-mono-100) / var(--alpha-100));
+  --color-button-foreground-inverse-active: rgba(var(--color-mono-0) / var(--alpha-100));
+  --color-button-foreground-inverse-hover: rgba(var(--color-mono-0) / var(--alpha-100));
+  --color-button-foreground-inverse-selected: rgba(var(--color-mono-0) / var(--alpha-100));
+  --color-button-background-active: rgba(var(--color-mono-0) / var(--alpha-100));
+  --color-button-background-hover: rgba(var(--color-mono-0) / var(--alpha-90));
+  --color-button-background-selected: rgba(var(--color-mono-0) / var(--alpha-80));
+  --color-button-background-inverse-active: rgba(var(--color-mono-100) / var(--alpha-100));
+  --color-button-background-inverse-hover: rgba(var(--color-mono-100) / var(--alpha-90));
+  --color-button-background-inverse-selected: rgba(var(--color-mono-100) / var(--alpha-80));
+  --color-stroke-default: rgba(var(--color-mono-0) / var(--alpha-20));
+  --color-stroke-gradient-background-init: rgba(var(--color-mono-0) / var(--alpha-10));
+  --color-stroke-gradient-background-center: rgba(var(--color-mono-0) / var(--alpha-0));
+  --color-stroke-gradient-background-end: rgba(var(--color-mono-0) / var(--alpha-10));
+  --color-stroke-divider-init: rgba(var(--color-mono-0) / var(--alpha-0));
+  --color-stroke-divider-center: rgba(var(--color-mono-0) / var(--alpha-20));
+  --color-stroke-divider-end: rgba(var(--color-mono-0) / var(--alpha-0));
+  --color-shadow-deep: rgba(var(--color-mono-100) / var(--alpha-20));
+  --color-shadow-rough: rgba(var(--color-mono-100) / var(--alpha-10));
+}
+
+/* ============================================
+   PROJECT COLOR OVERLAYS
+   ============================================ */
+
+/* Embat - Light theme */
+[data-theme="light"][data-project-color="embat"] {
+  background-color: rgb(var(--color-project-embat-subtle));
+}
+
+/* Embat - Dark theme */
+[data-theme="dark"][data-project-color="embat"] {
+  --color-project-tint: 203 226 249;
+}
+
+[data-theme="dark"][data-project-color="embat"] h1,
+[data-theme="dark"][data-project-color="embat"] h2,
+[data-theme="dark"][data-project-color="embat"] .text-display {
+  color: rgba(var(--color-project-tint) / var(--alpha-90));
+}
+
+[data-theme="dark"][data-project-color="embat"] p,
+[data-theme="dark"][data-project-color="embat"] .text-body {
+  color: rgba(var(--color-project-tint) / var(--alpha-80));
+}
+
+/* Phoenix - Light theme */
+[data-theme="light"][data-project-color="phoenix"] {
+  background-color: rgb(var(--color-project-phoenix-subtle));
+}
+
+/* Phoenix - Dark theme */
+[data-theme="dark"][data-project-color="phoenix"] {
+  --color-project-tint: 238 234 249;
+}
+
+[data-theme="dark"][data-project-color="phoenix"] h1,
+[data-theme="dark"][data-project-color="phoenix"] h2,
+[data-theme="dark"][data-project-color="phoenix"] .text-display {
+  color: rgba(var(--color-project-tint) / var(--alpha-90));
+}
+
+[data-theme="dark"][data-project-color="phoenix"] p,
+[data-theme="dark"][data-project-color="phoenix"] .text-body {
+  color: rgba(var(--color-project-tint) / var(--alpha-80));
+}
+

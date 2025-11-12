@@ -1,0 +1,50 @@
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+/* Shadows */
+.shadow-deep {
+  box-shadow: 0 8px 24px var(--color-shadow-deep);
+}
+
+.shadow-rough {
+  box-shadow: 0 4px 12px var(--color-shadow-rough);
+}
+
+/* Aspect ratios */
+.ratio-169 {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.ratio-11 {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+/* Spacing utilities */
+.p-0 { padding: var(--dimension-0); }
+.p-100 { padding: var(--dimension-100); }
+.p-200 { padding: var(--dimension-200); }
+.p-300 { padding: var(--dimension-300); }
+
+.m-0 { margin: var(--dimension-0); }
+.m-100 { margin: var(--dimension-100); }
+.m-200 { margin: var(--dimension-200); }
+.m-300 { margin: var(--dimension-300); }
+
+/* Display utilities */
+.flex { display: flex; }
+.inline-flex { display: inline-flex; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+.hidden { display: none; }
+
+/* Flex utilities */
+.flex-col { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-100 { gap: var(--dimension-100); }
+.gap-200 { gap: var(--dimension-200); }

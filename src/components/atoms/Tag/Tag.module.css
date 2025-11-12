@@ -1,0 +1,30 @@
+@import '../../../tokens/type-scale.css';
+
+/* Base del tag */
+.tag {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    padding: var(--dimension-050) var(--dimension-100);
+    gap: var(--dimension-100);
+    border-radius: var(--border-radius-full);
+
+    background-color: var(--color-background-primary);
+    color: var(--color-foreground-tertiary);
+}
+
+/* Icono */
+.tag__icon {
+    width: 16px;
+    height: 16px;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
+    /* color: var(--color-foreground-tertiary) !important; */
+}
+
+
+/* Label */
+.tag__label {
+    composes: text-body from '../../../tokens/type-scale.css';
+    /* 4 */
+}

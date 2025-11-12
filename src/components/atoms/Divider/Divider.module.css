@@ -1,0 +1,60 @@
+/* Base común */
+.divider {
+  border: none;
+  flex-shrink: 0;
+}
+
+/* Orientación horizontal */
+.divider--horizontal {
+  width: 100%;
+  height: var(--border-width-primary);
+}
+
+/* Orientación vertical */
+.divider--vertical {
+  width: var(--border-width-primary);
+  height: 100%;
+}
+
+/* Variante: Solid */
+.divider--solid {
+  background-color: var(--color-stroke-default);
+}
+
+/* Variante: Gradient Center */
+.divider--gradient-center.divider--horizontal {
+  background: linear-gradient(
+    to right,
+    var(--color-stroke-gradient-background-init),
+    var(--color-stroke-gradient-background-center),
+    var(--color-stroke-gradient-background-end)
+  );
+}
+
+.divider--gradient-center.divider--vertical {
+  background: linear-gradient(
+    to bottom,
+    var(--color-stroke-gradient-background-init),
+    var(--color-stroke-gradient-background-center),
+    var(--color-stroke-gradient-background-end)
+  );
+}
+
+/* Variante: Gradient Extremes */
+.divider--gradient-extremes.divider--horizontal {
+  background: linear-gradient(
+    to right,
+    var(--color-stroke-divider-init),
+    var(--color-stroke-divider-center),
+    var(--color-stroke-divider-end)
+  );
+}
+
+.divider--gradient-extremes.divider--vertical {
+  background: linear-gradient(
+    to bottom,
+    var(--color-stroke-divider-init),
+    var(--color-stroke-divider-center),
+    var(--color-stroke-divider-end)
+  );
+}
