@@ -1,0 +1,61 @@
+/* Base del icon button */
+.icon-button {
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Tamaño fijo cuadrado */
+  width: var(--dimension-500);
+  height: var(--dimension-500);
+  aspect-ratio: 1 / 1;
+  
+  /* Padding (decorativo, no afecta al tamaño por el width/height fijo) */
+  padding: var(--dimension-150);
+  
+  /* Forma circular */
+  border-radius: var(--border-radius-full);
+  
+  /* Sin borde */
+  border: none;
+  
+  /* Colores Ghost (mismo que Button) */
+  background-color: transparent;
+  color: var(--color-button-foreground-inverse-active);
+  
+  /* Interaction */
+  cursor: pointer;
+  user-select: none;
+  
+  /* Transitions */
+  transition: all 0.2s ease;
+  
+  /* Scale para animación de press */
+  transform: scale(1);
+}
+
+/* Hover state */
+.icon-button:hover:not(:disabled) {
+  background-color: var(--color-semantic-background-hover);
+  color: var(--color-button-foreground-inverse-hover);
+}
+
+/* Active/Press state */
+.icon-button:active:not(:disabled) {
+  background-color: var(--color-semantic-background-selected);
+  color: var(--color-button-foreground-inverse-selected);
+  transform: scale(0.97);
+}
+
+/* Disabled state */
+.icon-button--disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Icono interno */
+.icon-button__icon {
+  width: var(--dimension-200);
+  height: var(--dimension-200);
+  flex-shrink: 0;
+}
