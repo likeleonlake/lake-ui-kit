@@ -36,14 +36,14 @@
 .text-display-italic {
   font-family: var(--font-family-italic);
   font-weight: var(--font-weight-medium);
-  font-size: var(--dimension-600);
+  font-size: 50px;
   line-height: var(--dimension-800);
 }
 
 .text-display-bit {
   font-family: var(--font-family-bit);
   font-weight: var(--font-weight-medium);
-  font-size: var(--dimension-600);
+  font-size: 69px;
   line-height: var(--dimension-800);
 }
 

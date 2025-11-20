@@ -10,7 +10,10 @@
       "import": "./dist/lake-ui-kit.es.js",
       "require": "./dist/lake-ui-kit.cjs.js"
     },
-    "./dist/lake-ui-kit.css": "./dist/lake-ui-kit.css"
+    "./dist/lake-ui-kit.css": "./dist/lake-ui-kit.css",
+    "./tokens/core": "./src/tokens/core.css",
+    "./tokens/theme": "./src/tokens/theme.css",
+    "./tokens/type-scale": "./src/tokens/type-scale.css"
   },
   "files": [
     "dist"

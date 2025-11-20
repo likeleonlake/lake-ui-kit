@@ -3,6 +3,8 @@
    Generated from Tokens Studio
    ============================================ */
 
+@import url('./fonts.css');
+
 :root {
   /* Colors - Base */
   --color-mono-100: 52 52 51;
