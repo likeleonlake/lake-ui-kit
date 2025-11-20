@@ -16,7 +16,8 @@
     "./tokens/type-scale": "./src/tokens/type-scale.css"
   },
   "files": [
-    "dist"
+    "dist",
+    "src/tokens"
   ],
   "scripts": {
     "dev": "vite",
