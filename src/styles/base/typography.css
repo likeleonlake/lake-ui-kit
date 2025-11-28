@@ -2,9 +2,6 @@
    TYPOGRAPHY BASE
    ============================================ */
 
-/* Import type scale */
-@import url('../tokens/type-scale.css');
-
 /* Additional typography utilities */
 .text-primary {
   color: var(--color-foreground-primary);

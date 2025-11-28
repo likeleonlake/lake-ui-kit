@@ -5,6 +5,25 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere a [Versionado Semántico](https://semver.org/lang/es/).
 
+## [0.3.0] - 2024-11-20
+
+### Added
+- Sistema de sombras (shadows) con 3 niveles de elevación
+- `--shadow-subtle` para hover states, inputs, tags con elevación baja
+- `--shadow-medium` para cards, botones elevados con elevación media
+- `--shadow-deep` para modals, dropdowns, popovers con elevación alta
+- Documentación de shadows en Storybook (Tokens/Shadows)
+
+### Fixed
+- Corregir import duplicado de type-scale.css en typography.css
+- Corregir exports en index.js de todos los componentes
+
+### Technical
+- Nuevo archivo `src/tokens/shadows.css`
+- Sombras usan tokens semánticos `--color-shadow-rough` y `--color-shadow-deep`
+- Sombras se adaptan automáticamente a light/dark mode
+- Importación de shadows en `src/styles/index.css`
+
 ## [0.2.0] - 2024-11-15
 
 ### Added

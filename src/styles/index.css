@@ -2,13 +2,38 @@
    Lake UI Kit - Main Styles Entry Point
    ========================================================================== */
 
-/* Global styles */
+/* 1. Design Tokens */
+@import '../tokens/core.css';
+@import '../tokens/theme.css';
+@import '../tokens/type-scale.css';
+@import '../tokens/shadows.css';
+
+/* 2. Base Styles */
+@import './base/reset.css';
+@import './base/typography.css';
+@import './base/utilities.css';
+
+/* 3. Global styles */
 :root {
+  /* Configuración de color scheme para dark mode nativo del navegador */
   color-scheme: light dark;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: var(--font-family-default);
+/* Smooth scrolling */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Respeta las preferencias de motion del usuario */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
