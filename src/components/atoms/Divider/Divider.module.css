@@ -16,9 +16,14 @@
   height: 100%;
 }
 
-/* Variante: Solid */
+/* Variante: Solid - Usar color-project-current */
 .divider--solid {
-  background-color: var(--color-stroke-default);
+  background-color: rgba(var(--color-project-current, var(--color-stroke-default)) / 0.2);
+}
+
+/* En dark theme con project-color, tintar */
+[data-theme="dark"][data-project-color] .divider--solid {
+  background-color: rgba(var(--color-project-current) / 0.2);
 }
 
 /* Variante: Gradient Center */

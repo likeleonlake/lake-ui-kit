@@ -1,30 +1,30 @@
 @import '../../../tokens/type-scale.css';
 
-/* Base del tag */
+/* Base del tag - Colores normales */
 .tag {
-    display: flex;
-    width: fit-content;
-    align-items: center;
-    padding: var(--dimension-050) var(--dimension-100);
-    gap: var(--dimension-100);
-    border-radius: var(--border-radius-full);
-
-    background-color: var(--color-background-primary);
-    color: var(--color-foreground-tertiary);
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  padding: var(--dimension-050) var(--dimension-100);
+  gap: var(--dimension-100);
+  border-radius: var(--border-radius-full);
+  background-color: var(--color-background-primary);
+  color: var(--color-foreground-tertiary);
 }
 
-/* Icono */
+/* En dark theme con project-color, tintar */
+[data-theme="dark"][data-project-color] .tag {
+  background-color: rgba(var(--color-project-current) / 0.15);
+  color: rgba(var(--color-project-current) / 0.9);
+}
+
 .tag__icon {
-    width: 16px;
-    height: 16px;
-    aspect-ratio: 1 / 1;
-    flex-shrink: 0;
-    /* color: var(--color-foreground-tertiary) !important; */
+  width: 16px;
+  height: 16px;
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
 }
 
-
-/* Label */
 .tag__label {
-    composes: text-body from '../../../tokens/type-scale.css';
-    /* 4 */
+  composes: text-body from '../../../tokens/type-scale.css';
 }

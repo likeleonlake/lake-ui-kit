@@ -95,48 +95,61 @@
 }
 
 /* ============================================
-   PROJECT COLOR OVERLAYS
+   PROJECT COLORS
    ============================================ */
 
-/* Embat - Light theme */
+/* Light theme - Solo background */
 [data-theme="light"][data-project-color="embat"] {
   background-color: rgb(var(--color-project-embat-subtle));
 }
 
-/* Embat - Dark theme */
+[data-theme="light"][data-project-color="embat"] body {
+  background-color: rgb(var(--color-project-embat-subtle));
+}
+
+[data-theme="light"][data-project-color="phoenix"] {
+  background-color: rgb(var(--color-project-phoenix-subtle));
+}
+
+[data-theme="light"][data-project-color="phoenix"] body {
+  background-color: rgb(var(--color-project-phoenix-subtle));
+}
+
+/* Dark theme - Tintar componentes */
 [data-theme="dark"][data-project-color="embat"] {
-  --color-project-tint: 203 226 249;
+  --color-project-current: var(--color-project-embat);
+}
+
+[data-theme="dark"][data-project-color="embat"] body {
+  background-color: var(--color-background-reset);
 }
 
 [data-theme="dark"][data-project-color="embat"] h1,
 [data-theme="dark"][data-project-color="embat"] h2,
 [data-theme="dark"][data-project-color="embat"] .text-display {
-  color: rgba(var(--color-project-tint) / var(--alpha-90));
+  color: rgba(var(--color-project-current) / var(--alpha-90));
 }
 
 [data-theme="dark"][data-project-color="embat"] p,
 [data-theme="dark"][data-project-color="embat"] .text-body {
-  color: rgba(var(--color-project-tint) / var(--alpha-80));
+  color: rgba(var(--color-project-current) / var(--alpha-80));
 }
 
-/* Phoenix - Light theme */
-[data-theme="light"][data-project-color="phoenix"] {
-  background-color: rgb(var(--color-project-phoenix-subtle));
-}
-
-/* Phoenix - Dark theme */
 [data-theme="dark"][data-project-color="phoenix"] {
-  --color-project-tint: 238 234 249;
+  --color-project-current: var(--color-project-phoenix);
+}
+
+[data-theme="dark"][data-project-color="phoenix"] body {
+  background-color: var(--color-background-reset);
 }
 
 [data-theme="dark"][data-project-color="phoenix"] h1,
 [data-theme="dark"][data-project-color="phoenix"] h2,
 [data-theme="dark"][data-project-color="phoenix"] .text-display {
-  color: rgba(var(--color-project-tint) / var(--alpha-90));
+  color: rgba(var(--color-project-current) / var(--alpha-90));
 }
 
 [data-theme="dark"][data-project-color="phoenix"] p,
 [data-theme="dark"][data-project-color="phoenix"] .text-body {
-  color: rgba(var(--color-project-tint) / var(--alpha-80));
+  color: rgba(var(--color-project-current) / var(--alpha-80));
 }
-
