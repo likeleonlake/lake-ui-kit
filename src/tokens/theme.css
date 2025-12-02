@@ -95,35 +95,26 @@
 }
 
 /* ============================================
-   PROJECT COLORS
+   PROJECT COLORS - Sistema basado en tokens
    ============================================ */
 
-/* Light theme - Solo background */
+/* Light theme + Project colors */
 [data-theme="light"][data-project-color="embat"] {
-  background-color: rgb(var(--color-project-embat-subtle));
-}
-
-[data-theme="light"][data-project-color="embat"] body {
-  background-color: rgb(var(--color-project-embat-subtle));
+  --color-background-reset: var(--color-project-embat-subtle);
+  --color-project-current: var(--color-project-embat);
 }
 
 [data-theme="light"][data-project-color="phoenix"] {
-  background-color: rgb(var(--color-project-phoenix-subtle));
+  --color-background-reset: var(--color-project-phoenix-subtle);
+  --color-project-current: var(--color-project-phoenix);
 }
 
-[data-theme="light"][data-project-color="phoenix"] body {
-  background-color: rgb(var(--color-project-phoenix-subtle));
-}
-
-/* Dark theme - Tintar componentes */
+/* Dark theme + Project colors */
 [data-theme="dark"][data-project-color="embat"] {
   --color-project-current: var(--color-project-embat);
 }
 
-[data-theme="dark"][data-project-color="embat"] body {
-  background-color: var(--color-background-reset);
-}
-
+/* Textos en dark con tint */
 [data-theme="dark"][data-project-color="embat"] h1,
 [data-theme="dark"][data-project-color="embat"] h2,
 [data-theme="dark"][data-project-color="embat"] .text-display {
@@ -137,10 +128,6 @@
 
 [data-theme="dark"][data-project-color="phoenix"] {
   --color-project-current: var(--color-project-phoenix);
-}
-
-[data-theme="dark"][data-project-color="phoenix"] body {
-  background-color: var(--color-background-reset);
 }
 
 [data-theme="dark"][data-project-color="phoenix"] h1,
