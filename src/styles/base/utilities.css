@@ -2,15 +2,6 @@
    UTILITY CLASSES
    ============================================ */
 
-/* Shadows */
-.shadow-deep {
-  box-shadow: 0 8px 24px var(--color-shadow-deep);
-}
-
-.shadow-rough {
-  box-shadow: 0 4px 12px var(--color-shadow-rough);
-}
-
 /* Aspect ratios */
 .ratio-169 {
   aspect-ratio: 16 / 9;
