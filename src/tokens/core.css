@@ -3,8 +3,6 @@
    Generated from Tokens Studio
    ============================================ */
 
-/* @import url('./fonts.css'); */
-
 :root {
   /* Colors - Base */
   --color-mono-100: 52 52 51;
@@ -41,6 +39,7 @@
   --dimension-250: 1.25rem;
   --dimension-275: 1.375rem;
   --dimension-300: 1.5rem;
+  --dimension-290: 1.75rem;
   --dimension-400: 2rem;
   --dimension-500: 2.5rem;
   --dimension-600: 3rem;
@@ -50,25 +49,28 @@
 
   /* Typography - Font families */
   --font-family-default: 'PP Neue Montreal', system-ui, sans-serif;
-  --font-family-italic: 'PP Writer', system-ui, sans-serif;
-  --font-family-bit: 'PP NeueBit', system-ui, sans-serif;
+  --font-family-italic: 'Averia Serif Libre', system-ui, sans-serif;
 
   /* Typography - Font weights */
   --font-weight-regular: 400;
   --font-weight-medium: 500;
-  --font-weight-bold: 700;
+  --font-weight-light: 300;
 
   /* Typography - Font sizes */
-  --font-size-display-default: var(--dimension-600);
-  --font-size-display-italic: 50px;
-  --font-size-display-bit: 69px;
-  --font-size-headline: var(--dimension-200);
+  --font-size-display: var(--dimension-300);
+  --font-size-h1: var(--dimension-250);
+  --font-size-h2: var(--dimension-200);
   --font-size-body: var(--dimension-200);
+  --font-size-caption: var(--dimension-175);
+  --font-size-button: var(--dimension-200);
 
   /* Typography - Line heights */
-  --line-height-display: var(--dimension-800);
-  --line-height-headline: var(--dimension-275);
+  --line-height-display: var(--dimension-500);
+  --line-height-h1: var(--dimension-300);
+  --line-height-h2: var(--dimension-275);
   --line-height-body: var(--dimension-275);
+  --line-height-caption: var(--dimension-250);
+  --line-height-button: var(--dimension-275);
 
   /* Border - Width */
   --border-width-primary: var(--dimension-005);

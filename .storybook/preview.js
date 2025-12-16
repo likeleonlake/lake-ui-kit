@@ -1,3 +1,9 @@
+// Importar fuente de Google Fonts
+const link = document.createElement('link');
+link.rel = 'stylesheet';
+link.href = 'https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;1,300&display=swap';
+document.head.appendChild(link);
+
 // Importar tokens directamente (sin pasar por index.css)
 import '../src/tokens/core.css';
 import '../src/tokens/theme.css';

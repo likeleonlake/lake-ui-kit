@@ -216,45 +216,74 @@ function generateTypeScaleCSS(coreTokens) {
   css += '   Generated from composite typography tokens\n';
   css += '   ============================================ */\n\n';
 
-  // Body styles
-  if (coreTokens.body) {
-    css += '/* Body styles */\n';
-    Object.entries(coreTokens.body).forEach(([variant, token]) => {
+// Process all typography tokens at core level
+  Object.entries(coreTokens).forEach(([key, token]) => {
+    // Only process if it's a direct typography token
+    if (token.type === 'typography' && token.value) {
       const value = token.value;
-      const className = variant === 'default' ? 'text-body' : `text-body-${variant}`;
+      const className = `text-${key}`;
       
+      css += `/* ${key} */\n`;
       css += `.${className} {\n`;
-      css += `  font-family: var(--font-family-${value.fontFamily.match(/\{font-family\.(.+)\}/)[1]});\n`;
-      css += `  font-weight: var(--font-weight-${value.fontWeight.match(/\{font-weight\.(.+)\}/)[1]});\n`;
       
-      const sizeRef = value.fontSize.match(/\{dimension\.(.+)\}/)?.[1];
-      css += `  font-size: var(--dimension-${sizeRef});\n`;
+      // Font family
+      let isItalic = false;
+      if (value.fontFamily) {
+        const familyMatch = value.fontFamily.match(/\{font-family\.(.+)\}/);
+        if (familyMatch) {
+          const familyName = familyMatch[1];
+          css += `  font-family: var(--font-family-${familyName});\n`;
+          
+          // Detectar si es italic
+          if (familyName === 'italic') {
+            isItalic = true;
+          }
+        }
+      }
       
-      const lhRef = value.lineHeight.match(/\{dimension\.(.+)\}/)?.[1];
-      css += `  line-height: var(--dimension-${lhRef});\n`;
-      css += '}\n\n';
-    });
-  }
+      // Font weight
+      if (value.fontWeight) {
+        const weightMatch = value.fontWeight.match(/\{font-weight\.(.+)\}/);
+        if (weightMatch) {
+          css += `  font-weight: var(--font-weight-${weightMatch[1]});\n`;
+        }
+      }
+      
+      // Font size
+      if (value.fontSize) {
+        // Can reference font-size, dimension, or be a fixed value
+        const sizeMatch = value.fontSize.match(/\{font-size\.(.+)\}/) || 
+                         value.fontSize.match(/\{dimension\.(.+)\}/);
+        if (sizeMatch) {
+          const prefix = value.fontSize.includes('font-size') ? 'font-size' : 'dimension';
+          css += `  font-size: var(--${prefix}-${sizeMatch[1]});\n`;
+        } else if (!value.fontSize.includes('{')) {
+          // Fixed value (50px, 69px)
+          css += `  font-size: ${value.fontSize};\n`;
+        }
+      }
+      
+      // Line height
+      if (value.lineHeight) {
+        const lhMatch = value.lineHeight.match(/\{line-height\.(.+)\}/) || 
+                       value.lineHeight.match(/\{dimension\.(.+)\}/);
+        if (lhMatch) {
+          const prefix = value.lineHeight.includes('line-height') ? 'line-height' : 'dimension';
+          css += `  line-height: var(--${prefix}-${lhMatch[1]});\n`;
+        } else if (!value.lineHeight.includes('{')) {
+          // Fixed value
+          css += `  line-height: ${value.lineHeight};\n`;
+        }
+      }
 
-  // Display styles
-  if (coreTokens.display) {
-    css += '/* Display styles */\n';
-    Object.entries(coreTokens.display).forEach(([variant, token]) => {
-      const value = token.value;
-      const className = variant === 'default' ? 'text-display' : `text-display-${variant}`;
+      // Font style (si usa font-family-italic)
+      if (isItalic) {
+        css += `  font-style: italic;\n`;
+      }
       
-      css += `.${className} {\n`;
-      css += `  font-family: var(--font-family-${value.fontFamily.match(/\{font-family\.(.+)\}/)[1]});\n`;
-      css += `  font-weight: var(--font-weight-${value.fontWeight.match(/\{font-weight\.(.+)\}/)[1]});\n`;
-      
-      const sizeRef = value.fontSize.match(/\{dimension\.(.+)\}/)?.[1];
-      css += `  font-size: var(--dimension-${sizeRef});\n`;
-      
-      const lhRef = value.lineHeight.match(/\{dimension\.(.+)\}/)?.[1];
-      css += `  line-height: var(--dimension-${lhRef});\n`;
       css += '}\n\n';
-    });
-  }
+    }
+  });
 
   return css;
 }

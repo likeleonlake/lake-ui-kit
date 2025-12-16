@@ -95,48 +95,48 @@
 }
 
 /* ============================================
-   PROJECT COLORS - Sistema basado en tokens
+   PROJECT COLOR OVERLAYS
    ============================================ */
 
-/* Light theme + Project colors */
+/* Embat - Light theme */
 [data-theme="light"][data-project-color="embat"] {
-  --color-background-reset: var(--color-project-embat-subtle);
-  --color-project-current: var(--color-project-embat);
+  background-color: rgb(var(--color-project-embat-subtle));
 }
 
-[data-theme="light"][data-project-color="phoenix"] {
-  --color-background-reset: var(--color-project-phoenix-subtle);
-  --color-project-current: var(--color-project-phoenix);
-}
-
-/* Dark theme + Project colors */
+/* Embat - Dark theme */
 [data-theme="dark"][data-project-color="embat"] {
-  --color-project-current: var(--color-project-embat);
+  --color-project-tint: 203 226 249;
 }
 
-/* Textos en dark con tint */
 [data-theme="dark"][data-project-color="embat"] h1,
 [data-theme="dark"][data-project-color="embat"] h2,
 [data-theme="dark"][data-project-color="embat"] .text-display {
-  color: rgba(var(--color-project-current) / var(--alpha-90));
+  color: rgba(var(--color-project-tint) / var(--alpha-90));
 }
 
 [data-theme="dark"][data-project-color="embat"] p,
 [data-theme="dark"][data-project-color="embat"] .text-body {
-  color: rgba(var(--color-project-current) / var(--alpha-80));
+  color: rgba(var(--color-project-tint) / var(--alpha-80));
 }
 
+/* Phoenix - Light theme */
+[data-theme="light"][data-project-color="phoenix"] {
+  background-color: rgb(var(--color-project-phoenix-subtle));
+}
+
+/* Phoenix - Dark theme */
 [data-theme="dark"][data-project-color="phoenix"] {
-  --color-project-current: var(--color-project-phoenix);
+  --color-project-tint: 238 234 249;
 }
 
 [data-theme="dark"][data-project-color="phoenix"] h1,
 [data-theme="dark"][data-project-color="phoenix"] h2,
 [data-theme="dark"][data-project-color="phoenix"] .text-display {
-  color: rgba(var(--color-project-current) / var(--alpha-90));
+  color: rgba(var(--color-project-tint) / var(--alpha-90));
 }
 
 [data-theme="dark"][data-project-color="phoenix"] p,
 [data-theme="dark"][data-project-color="phoenix"] .text-body {
-  color: rgba(var(--color-project-current) / var(--alpha-80));
+  color: rgba(var(--color-project-tint) / var(--alpha-80));
 }
+

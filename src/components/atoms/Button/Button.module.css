@@ -10,7 +10,7 @@
   height: var(--dimension-500);
   
   /* Typography - hereda de type-scale */
-  composes: text-body-high from '../../../tokens/type-scale.css';
+  composes: text-button from '../../../tokens/type-scale.css';
   
   /* Border */
   border: none;

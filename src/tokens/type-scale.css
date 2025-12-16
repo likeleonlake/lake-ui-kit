@@ -3,47 +3,61 @@
    Generated from composite typography tokens
    ============================================ */
 
-/* Body styles */
-.text-body-high {
-  font-family: var(--font-family-default);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--dimension-200);
-  line-height: var(--dimension-275);
-}
-
-.text-body {
-  font-family: var(--font-family-default);
-  font-weight: var(--font-weight-regular);
-  font-size: var(--dimension-200);
-  line-height: var(--dimension-275);
-}
-
-.text-body-default-italic {
-  font-family: var(--font-family-italic);
-  font-weight: var(--font-weight-regular);
-  font-size: var(--dimension-200);
-  line-height: var(--dimension-275);
-}
-
-/* Display styles */
+/* display */
 .text-display {
   font-family: var(--font-family-default);
   font-weight: var(--font-weight-medium);
-  font-size: var(--dimension-600);
-  line-height: var(--dimension-800);
+  font-size: var(--font-size-display);
+  line-height: var(--line-height-display);
 }
 
-.text-display-italic {
+/* h1 */
+.text-h1 {
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-h1);
+}
+
+/* h2 */
+.text-h2 {
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+}
+
+/* body */
+.text-body {
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+}
+
+/* body-italic */
+.text-body-italic {
   font-family: var(--font-family-italic);
-  font-weight: var(--font-weight-medium);
-  font-size: 50px;
-  line-height: var(--dimension-800);
+  font-weight: var(--font-weight-light);
+  font-size: var(--dimension-200);
+  line-height: var(--dimension-275);
+  font-style: italic;
 }
 
-.text-display-bit {
-  font-family: var(--font-family-bit);
+/* caption */
+.text-caption {
+  font-family: var(--font-family-italic);
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
+  font-style: italic;
+}
+
+/* button */
+.text-button {
+  font-family: var(--font-family-default);
   font-weight: var(--font-weight-medium);
-  font-size: 69px;
-  line-height: var(--dimension-800);
+  font-size: var(--font-size-button);
+  line-height: var(--line-height-button);
 }
 

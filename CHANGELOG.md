@@ -5,6 +5,32 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere a [Versionado Semántico](https://semver.org/lang/es/).
 
+## [0.4.0] - 2024-12-16
+
+### Changed
+- Reestructuración completa del sistema tipográfico
+- Nueva estructura de tokens: display, h1, h2, body, body-italic, caption, button
+- Actualización de sync-tokens.js para procesar nueva estructura de tipografía
+- Componente Button ahora usa `.text-button`
+- Componente Tag actualizado para nueva estructura
+
+### Added
+- Auto-detección de `font-style: italic` en tokens con `font-family-italic`
+- Fuente Averia Serif Libre (300 italic) para estilos itálicos
+- Sistema de sombras actualizado
+
+### Technical
+- Tokens tipográficos ahora son planos en lugar de anidados
+- Script sync-tokens.js más robusto con validaciones
+- Soporte para referencias tanto a `{font-size.*}` como `{dimension.*}`
+
+### Breaking Changes
+- ⚠️ Clases tipográficas antiguas eliminadas:
+  - `.text-body-high` → usar `.text-button` o `.text-h2`
+  - `.text-body-default-italic` → usar `.text-body-italic`
+  - `.text-display-italic`, `.text-display-bit` → usar `.text-display`
+
+
 ## [0.3.0] - 2024-11-20
 
 ### Added
