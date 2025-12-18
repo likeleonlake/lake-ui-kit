@@ -15,6 +15,9 @@
   /* Border */
   border: none;
   border-radius: var(--border-radius-full);
+
+  /* Importar Shadow */
+  composes: shadow-deep from '../../../tokens/shadows.css';
   
   /* Interaction */
   cursor: pointer;

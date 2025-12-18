@@ -1,0 +1,50 @@
+/* Base del avatar */
+.avatar {
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Tamaño fijo */
+  width: var(--dimension-300);
+  height: var(--dimension-300);
+  
+  /* Forma circular */
+  border-radius: var(--border-radius-full);
+  
+  /* Background para iniciales */
+  background-color: var(--color-background-secondary);
+  
+  /* Evitar deformación */
+  flex-shrink: 0;
+  
+  /* Ocultar overflow para que la imagen no se salga */
+  overflow: hidden;
+  
+  /* Transición suave */
+  transition: opacity 0.2s ease;
+
+}
+
+/* Imagen dentro del avatar */
+.avatar__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Iniciales dentro del avatar */
+.avatar__initials {
+  color: var(--color-foreground-tertiary);
+  composes: text-caption from '../../../tokens/type-scale.css';
+  text-transform: uppercase;
+  user-select: none;
+}
+ 
+
+/* Estado disabled */
+.avatar--disabled {
+  opacity: var(--alpha-60);
+  cursor: not-allowed;
+}

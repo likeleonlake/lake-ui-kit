@@ -18,16 +18,16 @@
 
 /* Variante: Solid - Usar color-project-current */
 .divider--solid {
-  background-color: rgba(var(--color-project-current, var(--color-stroke-default)) / 0.2);
+  background-color: var(--color-stroke-default);
 }
 
 /* En dark theme con project-color, tintar */
 [data-theme="dark"][data-project-color] .divider--solid {
-  background-color: rgba(var(--color-project-current) / 0.2);
+  background-color: var(--color-stroke-default);
 }
 
 /* Variante: Gradient Center */
-.divider--gradient-center.divider--horizontal {
+.divider--gradient-extremes.divider--horizontal {
   background: linear-gradient(
     to right,
     var(--color-stroke-gradient-background-init),
@@ -36,7 +36,7 @@
   );
 }
 
-.divider--gradient-center.divider--vertical {
+.divider--gradient-extremes.divider--vertical {
   background: linear-gradient(
     to bottom,
     var(--color-stroke-gradient-background-init),
@@ -46,7 +46,7 @@
 }
 
 /* Variante: Gradient Extremes */
-.divider--gradient-extremes.divider--horizontal {
+.divider--gradient-center.divider--horizontal {
   background: linear-gradient(
     to right,
     var(--color-stroke-divider-init),
@@ -55,7 +55,7 @@
   );
 }
 
-.divider--gradient-extremes.divider--vertical {
+.divider--gradient-center.divider--vertical {
   background: linear-gradient(
     to bottom,
     var(--color-stroke-divider-init),

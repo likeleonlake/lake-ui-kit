@@ -8,5 +8,6 @@ export { Divider } from './components/atoms/Divider';
 export { Tag } from './components/atoms/Tag';
 export { Button } from './components/atoms/Button';
 export { IconButton } from './components/atoms/IconButton';
+export { Avatar } from './components/atoms/Avatar';
 
 // Aquí irán más exportaciones a medida que añadamos componentes

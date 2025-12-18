@@ -5,6 +5,26 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto adhiere a [Versionado Semántico](https://semver.org/lang/es/).
 
+## [0.5.0] - 2024-12-16
+
+### Added
+- Componente Avatar con dos variantes: imagen e iniciales
+- Avatar con tamaño fijo 48px (--dimension-300)
+- Estados normal y disabled en Avatar
+- Sombra en componente Button usando `composes: shadow-deep from global`
+
+### Changed
+- Intercambiados valores de Divider gradient-center y gradient-extremes
+- Corregido renderizado de Divider solid
+- Ajustados valores de alfas en divider y sombras
+
+### Technical
+- Avatar usa background-secondary y foreground-tertiary
+- Avatar con border-radius: 50% para círculo perfecto
+- Avatar con object-fit: cover para imágenes
+- Documentación completa en Storybook para Avatar
+
+
 ## [0.4.0] - 2024-12-16
 
 ### Changed
